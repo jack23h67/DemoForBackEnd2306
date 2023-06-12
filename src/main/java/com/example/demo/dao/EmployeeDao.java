@@ -13,11 +13,11 @@ import com.example.demo.model.Employee;
 @Mapper
 public interface EmployeeDao {
 	@Insert(" INSERT INTO EMPLOYEE ( "
-	          + "	   EmployeeName, department, dateOfJoining "
+	          + "	    EmployeeName, department, dateOfJoining "
 			  + "	   "
 			  + " ) "
 			  + " VALUES ( "
-			  + "	   #{EmployeeName}, #{department}, NOW() "
+			  + "	    #{EmployeeName}, #{department}, NOW() "
 			  + "	    "
 			  + " ) ")
 		public Integer insert(Employee employee);
